@@ -1,24 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Card from './Components/Card';
+import img1 from './Faces/face1.svg'
+import Column from './Components/Column';
+import { cardDetails, statuses } from './Data';
+import Board from './Components/Board';
 
 function App() {
+  const [cards, setCards] = useState([...cardDetails])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=" bg-green-50 flex  justify-center h-[100vh] w-[100vw]
+    ">
+      
+  <Board />
+   
     </div>
   );
 }
