@@ -12,7 +12,7 @@
 
 import React, { useEffect, useState } from "react";
 import Column from "./Column";
-import { cardDetails, statuses } from "../Data";
+import { cardDetails, statuses } from "../utils/Types/Data";
 import Header from "./Header";
 
 const Board = () => {

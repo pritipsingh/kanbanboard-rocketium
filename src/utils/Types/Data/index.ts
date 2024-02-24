@@ -1,7 +1,7 @@
-import { CardType, statusTypes } from "../Types/cardType";
-import img from '../Faces/img.jpeg';
-import img1 from '../Faces/face1.svg'
-import img2 from '../Faces/face2.svg'
+import { CardType, statusTypes } from "../cardType";
+import img from '../../../Assets/img.jpeg';
+import img1 from '../../../Assets/face1.svg'
+import img2 from '../../../Assets/face2.svg'
 export const columnsDetails: statusTypes[] = [
     "todo" , "started" , "review" , "done" 
 ]

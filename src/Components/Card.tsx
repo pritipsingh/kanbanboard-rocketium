@@ -25,6 +25,8 @@ const Card = (props: any) => {
     drag: { scale: 1.1 },
   };
 
+  console.log("numm" , JSON.parse(props.id) , typeof JSON.parse(props.id))
+
   console.log(props.assignes);
   console.log(getCoordinatedColor(props.team));
   return (
@@ -40,7 +42,7 @@ const Card = (props: any) => {
         draggable="true"
         onDragStart={(e) => props.handleDragStart(e, { props })}
         initial={{
-          y: (props.id + 1) * 5,
+          y: (JSON.parse(props.id) + 1) * 5,
           opacity: 0,
         }}
         animate={{
@@ -53,7 +55,6 @@ const Card = (props: any) => {
         whileTap={{
           rotate: -6,
           scale: 0.8,
-          opacity:0
         }}
         whileFocus={{
           rotate: -12,
