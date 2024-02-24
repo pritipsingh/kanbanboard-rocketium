@@ -30,7 +30,7 @@ export const statuses : {
 
 export const cardDetails: CardType[] = [
     {
-        team: "CHROSNOS",
+        team: "chronos",
     title: "Inbox Design",
     id: "1",
     status: "todo",
@@ -46,7 +46,7 @@ export const cardDetails: CardType[] = [
     tags: ["Backend"]
     },
     {
-        team: "PHOenix",
+        team: "PHOENIX",
     title: "Build Conversion Module",
     id: "3",
     status: "todo",
@@ -77,7 +77,7 @@ export const cardDetails: CardType[] = [
     tags: ["UI", "Frontend"]
     },
     {
-        team: "pHEONIX",
+        team: "LUMOS",
     title: "eDitor design",
     id: "7",
     status: "started",
