@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { getColourForTags } from "../helper/helper";
+import { getColourForTags } from "../utils/Types/helper/helper";
 import img from '../Faces/img.jpeg'
 /**
  * Represents a single card component in the task board.

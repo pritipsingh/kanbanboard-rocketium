@@ -23,7 +23,7 @@ export const getColourForTags = () => {
 }
 
 
-// export function debounce(func: (arg0: any) => void, wait: number | undefined) {
+// export function debounceSearch(func: (arg0: any) => void, wait: number | undefined) {
 //     let timeout: string | number | NodeJS.Timeout | undefined;
   
 //     return function executedFunction(...args: any[]) {

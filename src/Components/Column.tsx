@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Card from "./Card";
 import { CardType } from "../utils/Types/cardType";
 import { motion } from "framer-motion"
-import { getColourForTags } from "../helper/helper";
+import { getColourForTags } from "../utils/Types/helper/helper";
 import { useDragAndDrop } from "../hooks/useDragAndDrop";
 /**
  * Represents a column in the kanban board. Each column corresponds to a task status (e.g., "Todo", "In Progress", "Done").
