@@ -28,67 +28,119 @@ export const statuses : {
 
 export const cardDetails: CardType[] = [
     {
-        team: "Marketing",
+        team: "CHROSNOS",
     title: "Inbox Design",
     id: "1",
     status: "todo",
-    assignes: ['/'],
-    tags: ["Design", "data"]
+    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    tags: ["Design", "Blocker"]
     },
     {
         team: "chronos",
-    title: "Inbox Design2",
+    title: "Inbox Infra",
     id: "2",
-    status: "started",
-    assignes: ['/'],
-    tags: ["Design", "data"]
+    status: "todo",
+    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    tags: ["Backend"]
     },
     {
-        team: "Peekachu",
-    title: "Inbox Design 3",
+        team: "PHOenix",
+    title: "Build Conversion Module",
     id: "3",
-    status: "started",
-    assignes: ['/'],
-    tags: ["Design", "data"]
+    status: "todo",
+    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    tags: ["frontend", "data"]
     },
     {
-        team: "Avenger",
-    title: "Inbox Design 4",
+        team: "LABS",
+    title: "Set up co-piolet APIs",
     id: "4",
-    status: "review",
-    assignes: ['/'],
-    tags: ["Design", "data"]
+    status: "started",
+    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    tags: ["Backend", "API"]
     },
     {
-        team: "Pokemon",
-    title: "Inbox Design 5",
+        team: "PHOENIX",
+    title: "Setup redux structure",
     id: "5",
     status: "started",
-    assignes: ['/'],
-    tags: ["Design", "data"]
+    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
     },
     {
-        team: "Man",
-    title: "Inbox Design",
+        team: "Labs",
+    title: "Build Co-piolet UI",
     id: "6",
     status: "started",
-    assignes: ['/'],
-    tags: ["Design", "data"]
+    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    tags: ["UI", "Frontend"]
     },
     {
-        team: "Tweet",
-    title: "Inbox Design 6",
+        team: "pHEONIX",
+    title: "eDitor design",
     id: "7",
+    status: "started",
+    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    tags: ["DESIGN", "Frontend"]
+    },
+    {
+        team: "CHRONOS",
+    title: "Notifications module",
+    id: "8",
+    status: "started",
+    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    },
+    {
+        team: "PHOENIX",
+    title: "SETUP CANVAS STATES",
+    id: "9",
     status: "done",
-    assignes: ['/'],
-    tags: ["Design", "data"]
+    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    tags: ["FRONTEND"]
     },{
     team: "Tweet",
     title: "Inbox Design 6",
-    id: "8",
+    id: "10",
     status: "done",
-    assignes: ['/'],
+    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
     tags: ["Design", "data"]
+    },
+    {
+        team: "CHRONOS",
+    title: "Project table API tests",
+    id: "11",
+    status: "review",
+    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    tags: ["api", "backend","testing" ]
+    },
+    {
+        team: "CHRONOS",
+    title: "Project Table Fixes",
+    id: "12",
+    status: "review",
+    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    },
+    {
+        team: "LUMOS",
+    title: "Public view link",
+    id: "13",
+    status: "done",
+    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    tags: ["api", "backend" ]
+    },
+    {
+        team: "LABS",
+    title: "command center UI testing",
+    id: "14",
+    status: "done",
+    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    tags: ["ui", "frontend","testing" ]
+    },
+    {
+        team: "CHRONOS",
+    title: "Noifications Phase 1",
+    id: "15",
+    status: "done",
+    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
     },
 
 ]
