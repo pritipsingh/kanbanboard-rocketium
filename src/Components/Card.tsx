@@ -69,21 +69,21 @@ const Card = (props: any) => {
           y: 0,
         }}
         variants={dragVariants}
-        className={`min-w-full hover:cursor-move z-[99] active:cursor-grabbing focus:cursor-grabbing p-2 bg-white rounded-md shadow-sm flex flex-col justify-start items-start `}
+        className={`min-w-full hover:cursor-move z-[99] active:cursor-grabbing focus:cursor-grabbing p-2 bg-white rounded-md shadow-sm flex flex-col flex-wrap justify-start items-start `}
       >
         <div
-          className={`px-[1px] ${props.color}  font-normal text-[0.4rem] rounded-sm`}
+          className={`px-[1px] ${props.color}  font-normal text-[0.5rem] rounded-sm`}
         >
           {props.team.toUpperCase()}
         </div>
-        <div className="text-[0.6rem] mt-1 text-gray-500">{props.title}</div>
+        <div className="text-[0.8rem] mt-1 text-gray-500">{props.title}</div>
         <div className="flex w-full mt-3 justify-between items-center">
-          <div className="text-[0.5rem] text-gray-400">TICKET #{props.id}</div>
+          <div className="text-[0.6rem] text-gray-400">TICKET #{props.id}</div>
           <div className="flex gap-1 items-center justify-center">
             {props.assignes.map((profile: string | undefined, index: any) => (
               <img
               key={index}
-              className="w-[14px] h-[14px] rounded-full text-[0.5rem]"
+              className="w-[16px] h-[16px] object-contain rounded-full text-[0.5rem]"
                 src={profile}
                 alt={"assigne"}
               />
@@ -93,7 +93,7 @@ const Card = (props: any) => {
         {props.tags && (
           <div className="flex gap-1 mt-2  items-center justify-center">
             {props.tags.map((tag: string, index: any) => (
-              <div className="px-[1px] text-white bg-gray-300 font-normal text-[0.4rem] rounded-sm">
+              <div className="px-[1px] text-white bg-gray-300 font-normal text-[0.5rem] rounded-sm">
                 {tag.toUpperCase()}
               </div>
             ))}

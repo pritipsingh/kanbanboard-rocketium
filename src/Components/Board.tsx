@@ -42,7 +42,7 @@ const Board = () => {
     setSearchCards([...cards]);
   }, [cards]);
   return (
-    <div className="flex flex-col h-full max-w-full  mx-[25vw] overflow-x-scroll">
+    <div className="flex flex-col h-full max-w-full  mx-[20vw] overflow-x-scroll">
       <Header
         searchCards={searchCards}
         setSearchCards={setSearchCards}
