@@ -1,5 +1,7 @@
 import { CardType, statusTypes } from "../Types/cardType";
-
+import img from '../Faces/img.jpeg';
+import img1 from '../Faces/face1.svg'
+import img2 from '../Faces/face2.svg'
 export const columnsDetails: statusTypes[] = [
     "todo" , "started" , "review" , "done" 
 ]
@@ -32,7 +34,7 @@ export const cardDetails: CardType[] = [
     title: "Inbox Design",
     id: "1",
     status: "todo",
-    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    assignes: [img1, img, img2],
     tags: ["Design", "Blocker"]
     },
     {
@@ -40,7 +42,7 @@ export const cardDetails: CardType[] = [
     title: "Inbox Infra",
     id: "2",
     status: "todo",
-    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    assignes: [img2, ],
     tags: ["Backend"]
     },
     {
@@ -48,7 +50,7 @@ export const cardDetails: CardType[] = [
     title: "Build Conversion Module",
     id: "3",
     status: "todo",
-    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    assignes: [img2, img1],
     tags: ["frontend", "data"]
     },
     {
@@ -56,7 +58,7 @@ export const cardDetails: CardType[] = [
     title: "Set up co-piolet APIs",
     id: "4",
     status: "started",
-    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    assignes: [img2, img1],
     tags: ["Backend", "API"]
     },
     {
@@ -64,14 +66,14 @@ export const cardDetails: CardType[] = [
     title: "Setup redux structure",
     id: "5",
     status: "started",
-    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    assignes: [img, img1],
     },
     {
         team: "Labs",
     title: "Build Co-piolet UI",
     id: "6",
     status: "started",
-    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    assignes: [img],
     tags: ["UI", "Frontend"]
     },
     {
@@ -79,7 +81,7 @@ export const cardDetails: CardType[] = [
     title: "eDitor design",
     id: "7",
     status: "started",
-    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    assignes: [img, img1 , img],
     tags: ["DESIGN", "Frontend"]
     },
     {
@@ -87,21 +89,21 @@ export const cardDetails: CardType[] = [
     title: "Notifications module",
     id: "8",
     status: "started",
-    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    assignes: [img1],
     },
     {
         team: "PHOENIX",
     title: "SETUP CANVAS STATES",
     id: "9",
     status: "done",
-    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    assignes: [img2, img1, img],
     tags: ["FRONTEND"]
     },{
     team: "Tweet",
     title: "Inbox Design 6",
     id: "10",
     status: "done",
-    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    assignes: [img1, img],
     tags: ["Design", "data"]
     },
     {
@@ -109,7 +111,7 @@ export const cardDetails: CardType[] = [
     title: "Project table API tests",
     id: "11",
     status: "review",
-    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    assignes: [img2, img],
     tags: ["api", "backend","testing" ]
     },
     {
@@ -117,14 +119,14 @@ export const cardDetails: CardType[] = [
     title: "Project Table Fixes",
     id: "12",
     status: "review",
-    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    assignes: [img1, img2, img],
     },
     {
         team: "LUMOS",
     title: "Public view link",
     id: "13",
     status: "done",
-    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    assignes: [img1, img2],
     tags: ["api", "backend" ]
     },
     {
@@ -132,7 +134,7 @@ export const cardDetails: CardType[] = [
     title: "command center UI testing",
     id: "14",
     status: "done",
-    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    assignes: [img2, img1, img],
     tags: ["ui", "frontend","testing" ]
     },
     {
@@ -140,7 +142,7 @@ export const cardDetails: CardType[] = [
     title: "Noifications Phase 1",
     id: "15",
     status: "done",
-    assignes: ['../Faces/img.jpeg', '../Faces/img.jpeg', '../Faces/img.jpeg'],
+    assignes: [img2],
     },
 
 ]

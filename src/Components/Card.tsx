@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { getColourForTags } from "../helper/helper";
-
+import img from '../Faces/img.jpeg'
 /**
  * Represents a single card component in the task board.
  * Each card displays information about a task, including team, title, tags, and assignees.
@@ -25,7 +25,7 @@ const Card = (props: any) => {
     drag: { scale: 1.1 },
   };
 
-  console.log(props.color);
+  console.log(props.assignes);
   console.log(getCoordinatedColor(props.team));
   return (
     <>
@@ -53,20 +53,25 @@ const Card = (props: any) => {
         whileTap={{
           rotate: -6,
           scale: 0.8,
+          opacity:0
         }}
         whileFocus={{
           rotate: -12,
-          scale: 3,
+          scale:  0.8,
+
+        }}
+        whileHover={{
+          rotate: -6,
+          scale:  0.9,
         }}
         whileDrag={{
           y: 0,
-          opacity: 1,
         }}
         variants={dragVariants}
         className={`min-w-full hover:cursor-move z-[99] active:cursor-grabbing focus:cursor-grabbing p-2 bg-white rounded-md shadow-sm flex flex-col justify-start items-start `}
       >
         <div
-          className={`px-[1px] bg-${props.color}  font-normal text-[0.4rem] rounded-sm`}
+          className={`px-[1px] ${props.color}  font-normal text-[0.4rem] rounded-sm`}
         >
           {props.team.toUpperCase()}
         </div>
@@ -74,10 +79,11 @@ const Card = (props: any) => {
         <div className="flex w-full mt-3 justify-between items-center">
           <div className="text-[0.5rem] text-gray-400">TICKET #{props.id}</div>
           <div className="flex gap-1 items-center justify-center">
-            {props.assignes.map((assignee: string | undefined, index: any) => (
+            {props.assignes.map((profile: string | undefined, index: any) => (
               <img
-                className="w-[10px]  h-[10px] rouunded-[50%] text-[0.5rem]"
-                src={assignee}
+              key={index}
+              className="w-[14px] h-[14px] rounded-full text-[0.5rem]"
+                src={profile}
                 alt={"assigne"}
               />
             ))}

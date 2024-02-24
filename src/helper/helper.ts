@@ -1,19 +1,20 @@
-const colors = ["red-100", "green-100", "blue-100", "yellow-100", "orange-100", "purple-100", "pink-100" , "cyan-300"];
+const colors = ['bg-red-100', 'bg-green-100', 'bg-blue-100', 'bg-yellow-100', 
+'bg-orange-100', 'bg-purple-100', 'bg-pink-100', 'bg-cyan-300'];
 
 function randomChooser() {
     const randomIndex = Math.floor(Math.random() * colors.length);
     return colors[randomIndex];
 }
-let cache : any= {}
+let cache : Record<string, string>= {}
 export const getColourForTags = () => {
 
     return (tag: string) => {
-        if(tag in cache){
+        if(tag.toLowerCase() in cache){
 
-            return cache[tag];
+            return cache[tag.toLowerCase()];
         }else{
             let color = randomChooser()
-            cache[tag] = color
+            cache[tag.toLowerCase()] = color
             return color;
         }
     }
