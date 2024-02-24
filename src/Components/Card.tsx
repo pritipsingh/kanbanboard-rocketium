@@ -76,7 +76,7 @@ const Card = (props: any) => {
         >
           {props.team.toUpperCase()}
         </div>
-        <div className="text-[0.8rem] mt-1 text-gray-500">{props.title}</div>
+        <div className="text-[0.7rem] capitalize mt-1 text-gray-500">{props.title}</div>
         <div className="flex w-full mt-3 justify-between items-center">
           <div className="text-[0.6rem] text-gray-400">TICKET #{props.id}</div>
           <div className="flex gap-1 items-center justify-center">
