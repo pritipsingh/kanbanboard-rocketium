@@ -29,15 +29,17 @@ const Column = ({ title, column, cards, setcards, searchCards }: any) => {
 
  
   return (
-    <div className="w-full mx-auto">
-      <div className="flex shrink-0 flex-col min-w-full overflow-scroll gap-1 h-full items-start">
+    <div 
+    onDragOver={handleDragOver}
+          onDragLeave={handleDragLeave}
+          onDrop={handleDrop}
+    className="w-[210px] shrink-0  mx-auto">
+      <div className="flex flex-col w-full overflow-y-scroll gap-1 h-full items-start">
         <h1 className="font-semibold shrink-0 p-2 text text-gray-500 text-[0.9rem]">
           {title}
         </h1>
         <motion.div
-          onDragOver={handleDragOver}
-          onDragLeave={handleDragLeave}
-          onDrop={handleDrop}
+          
           className={`drop-placeholder transition-colors rounded-md h-full mx-auto min-w-full gap-0 p-2  ${
             activeColumn === title ? "bg-gray-200" : ""
           }`}

@@ -49,7 +49,7 @@ const Board = () => {
         cards={cards}
       />
 
-      <div className="flex h-full w-full">
+      <div className="flex h-full max-w-full overflow-auto">
         {statuses.map((status, index) => (
           <Column
             searchCards={searchCards}
